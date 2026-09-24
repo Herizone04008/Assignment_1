@@ -1,0 +1,14 @@
+String username = Ask.forString("What is your Name?");
+println("What is your Name?");
+int lowerNumber = Ask.forInt("Enter a lower number:");
+int upperNumber = Ask.forInt("Enter an upper number:");
+int randomNumber = int(random(lowerNumber, upperNumber));
+size(500, 500);
+background(138, 43, 226);
+fill(255);
+circle(200, 188, upperNumber);
+fill(0);
+circle(200, 188, randomNumber);
+fill(255);
+circle(200, 188, lowerNumber);
+text("Hi, " + username + ", here's your drawing", 200, 400);
